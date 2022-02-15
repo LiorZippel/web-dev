@@ -1,0 +1,118 @@
+
+body {
+  background-color: black;
+  font-family: Helvetica, "Helvetica Neue", serif;
+}
+
+p {
+  margin-bottom: 5px;
+  margin-top: 5px
+}
+
+.wd-container {
+  padding-left: 16px;
+  margin-right:16px;
+}
+
+.wd-rounded-corners {
+  border-radius: 40px;
+  padding: 15px;
+  width: 80%;
+  margin: 15px;
+}
+
+.wd-float-left {
+  float: left;
+}
+
+.wd-float-right {
+  float: right;
+}
+
+.wd-float-done {
+  clear: both;
+}
+
+.wd-background_gray {
+  background: darkgray;
+}
+
+::placeholder {
+  color: whitesmoke;
+  opacity: 1;
+}
+
+.wd-text_white {
+  color: whitesmoke;
+}
+
+.wd-color_blue {
+  color: rgb(29,161,242);
+}
+
+.wd-float-gear {
+  padding-top: 30px;
+  padding-right: 16px;
+}
+
+.wd-float-head {
+  padding: 16px;
+  font-size: 15px;
+  float: left;
+}
+
+.wd-color-highlight{
+  color: rgb(29,161,242);
+  text-decoration: none;
+  border: rgb(29,161,242);
+  border-bottom-style: solid;
+}
+
+.wd-color-unselected{
+  color: rgb(110, 118, 125);
+  text-decoration: none;
+}
+
+.wd-suggested-border{
+  border:  rgb(110, 118, 125);
+  border-bottom-style: solid;
+  border-top-style: solid;
+  border-bottom-width: thin;
+  border-top-width: thin;
+}
+
+.wd-clear{
+  clear:left;
+}
+.wd-suggesed-text{
+  font-size: 13px;
+  font-weight: normal;
+  color: rgb(110, 118, 125);
+}
+
+.wd-suggesed-text-tuit{
+  font-size: 13px;
+  font-weight: bold;
+  color: white;
+  max-width: calc(100% - 150px);
+}
+
+.wd-feed-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+  float: right;
+  margin: 15px;
+}
+
+.wd-padding-feed{
+  padding-bottom: 80px;
+}
+
+.wd-padding-left-text {
+  padding-left: 5px;
+}
+
+
+
+
