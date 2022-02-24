@@ -4,87 +4,301 @@
   <meta charset="UTF-8">
   <title>Explore Page</title>
   <link href="explore.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+        rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        rel="stylesheet"/>
   <script src="https://kit.fontawesome.com/10d409d54f.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
+<!-- https://getbootstrap.com/docs/5.1/utilities/display/#hiding-elements -->
 <a href="navigation.html">Back</a>
-<div class="wd-container">
-
-  <input class="wd-background_gray wd-rounded-corners wd-text_white wd-float-left"
-         id="search-bar" placeholder="Search Twitter"/>
-  <a href="explore-settings.html" class="wd-float-right wd-float-gear"><p class="fa-solid fa-gear wd-color_blue"></p></a>
-
-  <div class="wd-float-done"></div>
-  <div>
-    <a href="explore.html" class="wd-float-head wd-color-highlight">
-      <p>For you</p>
-    </a>
-    <a href="trending.html" class="wd-float-head wd-color-unselected"><p>Trending</p></a>
-    <a href="covid.html" class="wd-float-head wd-color-unselected"><p>COVID-19</p></a>
-    <a href="news.html" class="wd-float-head wd-color-unselected"><p>News</p></a>
-    <a href="sport.html" class="wd-float-head wd-color-unselected"><p>Sports</p></a>
-    <a href="entertainment.html" class="wd-float-head wd-color-unselected"><p>Entertainment</p></a>
-  </div>
-
-  <div>
-    <div class="wd-suggested-border wd-clear">
-      <p class="wd-suggesed-text">Chess is Trending</p>
-      <p class="wd-suggesed-text-tuit">Big Lamo Carlsen Wins Again</p>
-      <p class="wd-suggesed-text">100k Tuits</p>
+<div class="row">
+  <div class="col-xl-2 col-lg-1 col-md-2 col-sm-2">
+    <div class="container m-0 p-0">
+    <div class="list-group">
+      <a href="#"
+         class="list-group-item list-group-item-action">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="home.html"
+         class="list-group-item list-group-item-action">
+        <i class="fa-solid fa-house"></i><span class="d-none d-xl-inline"> Home</span>
+      </a>
+      <a href="#"
+         class="list-group-item list-group-item-action active" aria-current="true">
+        # <span class="d-none d-xl-inline"> Explore</span>
+      </a>
+      <a href="notifications.html"
+         class="list-group-item list-group-item-action">
+        <i class="fa-solid fa-bell"></i> <span class="d-none d-xl-inline"> Notifications</span>
+      </a>
+      <a href="messages.html"
+         class="list-group-item list-group-item-action">
+        <i class="fa-solid fa-envelope"></i> <span class="d-none d-xl-inline"> Messages</span></a>
+      <a href="bookmarks.html"
+         class="list-group-item list-group-item-action">
+        <i class="fa-solid fa-bookmark"></i> <span class="d-none d-xl-inline"> Bookmarks</span></a>
+      <a href="lists.html"
+         class="list-group-item list-group-item-action">
+        <i class="fa-solid fa-list"></i> <span class="d-none d-xl-inline"> Lists</span></a>
+      <a href="profile.html"
+         class="list-group-item list-group-item-action">
+        <i class="fa-solid fa-user"></i> <span class="d-none d-xl-inline"> Profile</span></a>
+      <a href="more.html"
+         class="list-group-item list-group-item-action">
+        <i class="fa-solid fa-circle-chevron-up"></i> <span class="d-none d-xl-inline"> More</span></a>
     </div>
-  </div>
-  <div>
-    <div class="wd-suggested-border wd-clear">
-      <p class="wd-suggesed-text">Based on your likes</p>
-      <p class="wd-suggesed-text-tuit">New Wilco Recordings Released</p>
-      <p class="wd-suggesed-text">4,321 Tuits</p>
     </div>
+    <button class="btn btn-primary override-tweet-btn">
+      Tuit
+    </button>
+
   </div>
+  <div class="col-xl-6 col-lg-7 col-md-10 col-sm-10">
+    <div class="row">
+      <div class="col-11">
+        <div class="input-group mb-3">
+      <span class="input-group-text override-search-icon">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </span>
+          <input type="text" class="form-control override-search" placeholder="Search Tuiter">
 
-  <div>
-    <div class="wd-suggested-border">
-      <div class="wd-float-left wd-padding-feed">
-          <p class="wd-suggesed-text-tuit wd-float-left">
-            <i class="fa-solid fa-chess"></i>
-            Lior Zippel
-            <span class="wd-padding-left-text wd-suggesed-text"> · Yesterday</span>
-          </p>
-          <div class="wd-suggesed-text wd-float-left wd-padding-left-text">
+        </div>
+      </div>
+      <div class="col-1">
+        <a href="#" class="gear"><i class="fa-solid fa-gear"></i></a>
+      </div>
+    </div>
+    <div>
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">For you</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Trending</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">News</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sports</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Entertainment</a>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <div class="card">
+        <img src="https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg">
+        <div class="card-img-overlay h-100 d-flex flex-column justify-content-end">
+          <h1 class="card-text text-overlay">SpaceX's Starship</h1>
+        </div>
+      </div>
+    </div>
 
+    <div class="row">
+      <div class="col-12">
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-10">
+                <h6 class="card-subtitle mb-2 text-muted">Web Development</h6>
+                <h5 class="card-title">ReactJS
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span class="header-text"> - 2h</span>
+                </h5>
+                <p class="card-text">React.JS is a component based front end
+                  library
+                  that
+                  makes it very easy to build Single Page Applications or SPAs</p>
+              </div>
+              <div class="col-2 text-right">
+                <img class="img-fluid tweet-img"
+                     src="https://avatars.githubusercontent.com/u/6412038?s=280&v=4">
+              </div>
+            </div>
           </div>
-        <p class="wd-suggesed-text-tuit wd-clear">
-          I need to disable Spotify when I'm tryna be productive. I've had 3 cups a coffee written maybe 10 lines of css and just went down a Fela Kuti Rabbit Hole
-        </p>
+        </div>
       </div>
-      <img src="https://pbs.twimg.com/semantic_core_img/1485540463318765568/KxOjh4CA?format=jpg&name=360x360"
-           class="wd-feed-photo">
     </div>
-  </div>
-  <div class="wd-float-done"></div>
-  <div class="wd-clear">
-    <div class="wd-suggested-border">
-      <div class="wd-float-left">
-        <p class="wd-suggesed-text wd-float-left">
-          Bad Jokes · Live
-        </p>
-        <p class="wd-suggesed-text-tuit wd-clear">
-          Did you hear the joke about the bunny who's nose was all runny? You may think its funny but its snot.
-        </p>
+    <div class="row">
+      <div class="col-12">
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-10">
+                <h5 class="card-title">JavaScript
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span class="header-text"> - 2h</span>
+                </h5>
+                <p class="card-text">JavaScript is a programming language that can run on both
+                  web browsers as well as desktops.</p>
+                <h6 class="card-subtitle mb-2 text-muted">123k Tuits</h6>
+              </div>
+              <div class="col-2 text-right">
+                <img class="img-fluid tweet-img"
+                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/2048px-Unofficial_JavaScript_logo_2.svg.png">
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <img src="https://pbs.twimg.com/media/FK1z_VmXwAM5d3g?format=png&name=small"
-           class="wd-feed-photo">
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-10">
+                <h6 class="card-subtitle mb-2 text-muted">Web Development</h6>
+                <h5 class="card-title">Jquery</h5>
+                <h6 class="card-subtitle mb-2 text-muted">123k Tuits</h6>
+              </div>
+              <div class="col-2 text-right">
+                <img class="img-fluid tweet-img"
+                     src="https://www.pngitem.com/pimgs/m/206-2069866_transparent-css3-logo-png-jquery-logo-png-png.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-10">
+                <h6 class="card-subtitle mb-2 text-muted">Web Development</h6>
+                <h5 class="card-title">NodeJS
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span class="header-text"> - 2h</span>
+                </h5>
+                <h6 class="card-subtitle mb-2 text-muted">123k Tuits</h6>
+              </div>
+              <div class="col-2 text-right">
+                <img class="img-fluid tweet-img"
+                     src="https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <div class="col-4 d-none d-lg-block">
+    <div class="list-group">
+      <div class="list-group-item">
+        <h5>Who to follow</h5>
+      </div>
+      <div class="list-group-item">
+        <div class="row">
+          <div class="col-2">
+            <img
+                src="https://cdn-icons-png.flaticon.com/512/226/226777.png"
+                class="circle-img">
+          </div>
+          <div class="col-7">
+            <h5>Java
+              <i class="fa-solid fa-circle-check"></i>
+            </h5>
+            <span>@java</span>
+          </div>
+          <div class="col-3">
+            <button class="btn btn-primary rounded-btn">
+              Follow
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="list-group-item">
+        <div class="row">
+          <div class="col-2">
+            <img
+                src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/j3dbh6kok0dket3uz2vy"
+                class="circle-img">
+          </div>
+          <div class="col-7">
+            <h5>Relativity Space
+              <i class="fa-solid fa-circle-check"></i>
+            </h5>
+            <span>@relativityspace</span>
+          </div>
+          <div class="col-3">
+            <button class="btn btn-primary rounded-btn">
+              Follow
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="list-group-item">
+        <div class="row">
+          <div class="col-2">
+            <img
+                src="https://logoeps.com/wp-content/uploads/2011/06/virgin-vector.jpg"
+                class="circle-img">
+          </div>
+          <div class="col-7">
+            <h5>Virgin Galactic
+              <i class="fa-solid fa-circle-check"></i>
+            </h5>
+            <span>@virgingalactic</span>
+          </div>
+          <div class="col-3">
+            <button class="btn btn-primary rounded-btn">
+              Follow
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="list-group-item">
+        <div class="row">
+          <div class="col-2">
+            <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/2449px-NASA_logo.svg.png"
+                class="circle-img">
+          </div>
+          <div class="col-7">
+            <h5>NASA
+              <i class="fa-solid fa-circle-check"></i>
+            </h5>
+            <span>@nasa</span>
+          </div>
+          <div class="col-3">
+            <button class="btn btn-primary rounded-btn">
+              Follow
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="list-group-item">
+        <div class="row">
+          <div class="col-2">
+            <img
+                src="https://i.redd.it/hvp9emyogsq11.jpg"
+                class="circle-img">
+          </div>
+          <div class="col-7">
+            <h5>Tesla
+              <i class="fa-solid fa-circle-check"></i>
+            </h5>
+            <span>@tesla</span>
+          </div>
+          <div class="col-3">
+            <button class="btn btn-primary rounded-btn">
+              Follow
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="wd-float-done"></div>
-
-  <div>
-    <div class="wd-suggested-border wd-clear">
-      <p class="wd-suggesed-text">Based on your likes</p>
-      <p class="wd-suggesed-text-tuit">Time flies like an arrow, but fruit flies like a banana</p>
-      <p class="wd-suggesed-text">465 Tuits</p>
-    </div>
-  </div>
-
+</div>
 
 </div>
 </body>

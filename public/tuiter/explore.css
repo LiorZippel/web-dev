@@ -1,118 +1,58 @@
 
-body {
-  background-color: black;
-  font-family: Helvetica, "Helvetica Neue", serif;
-}
-
-p {
-  margin-bottom: 5px;
-  margin-top: 5px
-}
-
-.wd-container {
-  padding-left: 16px;
-  margin-right:16px;
-}
-
-.wd-rounded-corners {
+.btn-primary.override-tweet-btn {
   border-radius: 40px;
-  padding: 15px;
-  width: 80%;
-  margin: 15px;
+  width: 100%;
 }
 
-.wd-float-left {
-  float: left;
+.input-group.override-s-width {
+  width: 70%;
 }
 
-.wd-float-right {
-  float: right;
+.input-group-text.override-search-icon {
+  background-color: white;
+  border-radius: 40px;
+  border-right-style: hidden;
 }
 
-.wd-float-done {
-  clear: both;
+.form-control.override-search {
+  border-radius:40px;
+  border-left-style: hidden;
 }
 
-.wd-background_gray {
-  background: darkgray;
-}
-
-::placeholder {
-  color: whitesmoke;
-  opacity: 1;
-}
-
-.wd-text_white {
-  color: whitesmoke;
-}
-
-.wd-color_blue {
-  color: rgb(29,161,242);
-}
-
-.wd-float-gear {
-  padding-top: 30px;
-  padding-right: 16px;
-}
-
-.wd-float-head {
-  padding: 16px;
-  font-size: 15px;
-  float: left;
-}
-
-.wd-color-highlight{
-  color: rgb(29,161,242);
-  text-decoration: none;
-  border: rgb(29,161,242);
-  border-bottom-style: solid;
-}
-
-.wd-color-unselected{
-  color: rgb(110, 118, 125);
-  text-decoration: none;
-}
-
-.wd-suggested-border{
-  border:  rgb(110, 118, 125);
-  border-bottom-style: solid;
-  border-top-style: solid;
-  border-bottom-width: thin;
-  border-top-width: thin;
-}
-
-.wd-clear{
-  clear:left;
-}
-.wd-suggesed-text{
-  font-size: 13px;
-  font-weight: normal;
-  color: rgb(110, 118, 125);
-}
-
-.wd-suggesed-text-tuit{
-  font-size: 13px;
-  font-weight: bold;
+.text-overlay {
   color: white;
-  max-width: calc(100% - 150px);
 }
 
-.wd-feed-photo {
-  width: 100px;
-  height: 100px;
-  border-radius: 15px;
+.tweet-float-l{
+  float: left;
+  max-width: 75%;
+}
+
+.tweet-float-r{
   float: right;
-  margin: 15px;
 }
 
-.wd-padding-feed{
-  padding-bottom: 80px;
+.tweet-img{
+  width: 200px;
+  border-radius: 15px;
 }
 
-.wd-padding-left-text {
-  padding-left: 5px;
+.header-text{
+  color: gray;
+  font-size: smaller;
 }
 
+.circle-img {
+  border-radius: 50%;
+  width:55px
+}
 
+.btn.rounded-btn {
+  border-radius:40px;
+}
 
+.gear {
+  color: dodgerblue;
+  font-size: 25px;
 
+}
