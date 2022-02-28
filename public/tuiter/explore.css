@@ -10,6 +10,7 @@
 
 .input-group-text.override-search-icon {
   background-color: white;
+  color:gray;
   border-radius: 40px;
   border-right-style: hidden;
 }
