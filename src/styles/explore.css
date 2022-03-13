@@ -1,0 +1,59 @@
+
+.btn-primary.override-tweet-btn {
+  border-radius: 40px;
+  width: 100%;
+}
+
+.input-group.override-s-width {
+  width: 70%;
+}
+
+.input-group-text.override-search-icon {
+  background-color: white;
+  color:gray;
+  border-radius: 40px;
+  border-right-style: hidden;
+}
+
+.form-control.override-search {
+  border-radius:40px;
+  border-left-style: hidden;
+}
+
+.text-overlay {
+  color: white;
+}
+
+.tweet-float-l{
+  float: left;
+  max-width: 75%;
+}
+
+.tweet-float-r{
+  float: right;
+}
+
+.tweet-img{
+  width: 200px;
+  border-radius: 15px;
+}
+
+.header-text{
+  color: gray;
+  font-size: smaller;
+}
+
+.circle-img {
+  border-radius: 50%;
+  width:55px
+}
+
+.btn.rounded-btn {
+  border-radius:40px;
+}
+
+.gear {
+  color: dodgerblue;
+  font-size: 25px;
+
+}

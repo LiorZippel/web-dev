@@ -1,0 +1,22 @@
+export default[
+  {location: "#", name:'Home', active: false, symbol:''},
+  {location: "../notifications.html",
+    name: "Notifications", symbol:"fa-solid fa-bell",
+    active:false},
+  {location: "../messages.html",
+    name: "Messages",
+    symbol: "fa-solid fa-envelope",
+        active: false},
+  {location: "../lists.html",
+    name: "Lists",
+    symbol: "fa-solid fa-list",
+    active: false},
+  {location: "../profile.html",
+    name: "Profile",
+    symbol: "fa-solid fa-user",
+    active: false},
+  {location: "../more.html",
+    name: "More",
+    symbol: "fa-solid fa-circle-chevron-up",
+    active: false}
+]
