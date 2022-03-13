@@ -4,19 +4,19 @@ const NavTabs = () => {
   return (<div>
     <ul className="nav nav-tabs">
       <li className="nav-item">
-        <a className="nav-link active" href="#">For you</a>
+        <button className="nav-link active">For you</button>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="#">Trending</a>
+        <button className="nav-link">Trending</button>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="#">News</a>
+        <button className="nav-link">News</button>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="#">Sports</a>
+        <button className="nav-link">Sports</button>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="#">Entertainment</a>
+        <button className="nav-link">Entertainment</button>
       </li>
     </ul>
   </div>);

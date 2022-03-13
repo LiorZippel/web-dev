@@ -29,7 +29,7 @@ const PostSummaryItem = ({
               </div>
               <div className="col-2 text-right">
                 <img className="img-fluid tweet-img" height="100px"
-                     src={post.image}/>
+                     src={post.image} alt={""}/>
               </div>
             </div>
           </div>

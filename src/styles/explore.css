@@ -53,7 +53,10 @@
 }
 
 .gear {
+  background-color: transparent;
   color: dodgerblue;
   font-size: 25px;
+  outline: none;
+  border: none;
 
 }

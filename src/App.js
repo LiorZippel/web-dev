@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import HelloWorld from './components/HelloWorld'
 import Labs from './components/Labs/index'
@@ -13,7 +13,7 @@ import './styles/explore.css';
 
 
 //import React from 'react';
-import {BrowserRouter, Route, Routes, Link}
+import {BrowserRouter, Route, Routes}
   from "react-router-dom";
 
 function App() {

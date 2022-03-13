@@ -16,13 +16,13 @@ const ExploreComponent = () => {
         </div>
       </div>
       <div className="col-1">
-        <a href="#" className="gear"><i className="fa-solid fa-gear"/></a>
+        <button className="gear"><i className="fa-solid fa-gear"/></button>
       </div>
     </div>
     <NavTabs/>
     <div>
       <div className="card">
-        <img src="https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg"/>
+        <img src="https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg" alt={""}/>
         <div className="card-img-overlay h-100 d-flex flex-column justify-content-end">
           <h1 className="card-text text-overlay">SpaceX's Starship</h1>
         </div>
