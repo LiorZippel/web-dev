@@ -1,6 +1,5 @@
-import {useDispatch, useSelector} from "react-redux";
+import {useDispatch} from "react-redux";
 import React from "react";
-import video from "../../video/videoItem";
 import TuitStats from "./tuit-stats";
 
 const TuitListItem = ({

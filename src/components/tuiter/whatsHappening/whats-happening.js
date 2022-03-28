@@ -16,7 +16,8 @@ const WhatsHappening = () => {
         <div className="row">
           <div className="col-2">
             <img className="img-fluid circle-img" height="40px"
-                 src="https://pbs.twimg.com/profile_images/1490862109797793792/4EsEb62G_400x400.jpg"/>
+                 src="https://pbs.twimg.com/profile_images/1490862109797793792/4EsEb62G_400x400.jpg"
+                alt=""/>
           </div>
           <div className="col-10">
       <textarea className="whats-happening-text"

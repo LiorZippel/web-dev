@@ -1,5 +1,5 @@
 import React from "react";
-import tuits from "../data/tuits.json";
+// import tuits from "../data/tuits.json";
 import TuitListItem from "./tuitListItem/index";
 
 import {useSelector} from "react-redux";

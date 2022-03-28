@@ -1,6 +1,4 @@
 import React from "react";
-import {Link} from "react-router-dom";
-import ExploreScreen from "./ExploreScreen/ExploreScreen";
 import NavigationSidebar from "./NavigationSidebar";
 import WhoToFollowList from "./WhoToFollowList";
 import {Outlet} from "react-router-dom";
