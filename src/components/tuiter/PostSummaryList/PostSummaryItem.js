@@ -3,6 +3,7 @@
 //     "title": "React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs",
 // },
 import React from 'react';
+import {useDispatch} from "react-redux";
 
 const PostSummaryItem = ({
   post = {
@@ -13,6 +14,11 @@ const PostSummaryItem = ({
     title: "React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs"
   }
 }) => {
+  const dispatch = useDispatch();
+  const deleteTuit = (post) => {
+    dispatch({type: 'delete-tuit', post})
+  };
+
   return (
 
       <div className="list-item">
@@ -25,6 +31,12 @@ const PostSummaryItem = ({
                   <i className="fa-solid fa-circle-check"/>
                   <span className="header-text"> {post.time === "" ? "" : "-"} {post.time}</span>
                 </h5>
+                {/*vvvvv*/}
+                <i onClick={() =>
+                    deleteTuit(post)}
+                   className="fas fa-remove fa-2x
+                  fa-pull-right"/>
+                {/*^^^^^^^^^*/}
                 <p className="card-text">{post.title}</p>
               </div>
               <div className="col-2 text-right">

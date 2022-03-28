@@ -9,8 +9,10 @@ import './vendors/bootstrap/bootstrap.min.css';
 import './vendors/fontawesome/css/fontawesome.css';
 import './vendors/fontawesome/css/all.min.css';
 import './styles/explore.css';
-
-
+import HomeScreen from "./components/tuiter/homeScreen";
+// import ExploreScreen from "./components/tuiter/ExploreScreen/ExploreScreen";
+import ExploreComponent
+  from "./components/tuiter/ExploreScreen/ExploreComponent";
 
 //import React from 'react';
 import {BrowserRouter, Route, Routes}
@@ -19,22 +21,26 @@ import {BrowserRouter, Route, Routes}
 function App() {
   return (
       <BrowserRouter>
-        <div className="container">
-          <Routes>
-            <Route path="/hello"
+        <Routes className="container">
+          <Route path="/">
+            <Route path=""
                    exact={true}
                    element={<HelloWorld/>}/>
-            <Route path="/"
+            <Route path="labs"
                    exact={true}
                    element={<Labs/>}/>
-            <Route path="/tuiter"
-                   exact={true}
-                   element={<Index/>}/>
-          </Routes>
-        </div>
+            <Route path="tuiter"
+                   element={<Index/>}>
+              <Route index
+                     element={<HomeScreen/>}/>
+              <Route path="explore"
+                     element={<ExploreComponent/>}/>
+            </Route>
+          </Route>
+        </Routes>
       </BrowserRouter>
-  );
+  )
+      ;
 }
-
 
 export default App;

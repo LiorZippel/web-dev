@@ -60,3 +60,37 @@
   border: none;
 
 }
+
+.username {
+  font-weight: bold;
+  color: white;
+}
+
+.handle {
+  color: darkgray;
+}
+
+.video-corners {
+  border-radius: 20px;
+}
+
+.whats-happening-text {
+  width: 100%;
+  background-color: transparent;
+  border-style: none;
+  border-bottom-style: solid;
+  color: lightgrey;
+}
+
+.tweet-button {
+  background-color: deepskyblue;
+  color: white;
+  padding: 5px;
+  border-style: none;
+  width: 80px;
+}
+
+.tweet-icons {
+  color: deepskyblue;
+  margin-right: 15px;
+}
