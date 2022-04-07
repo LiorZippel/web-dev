@@ -1,6 +1,7 @@
 import {useDispatch} from "react-redux";
 import React from "react";
 import TuitStats from "./tuit-stats";
+import {deleteTuit} from "../../actions/tuits-actions";
 
 const TuitListItem = ({
   tuit = {
@@ -29,10 +30,6 @@ const TuitListItem = ({
   }
 }) => {
   const dispatch = useDispatch();
-  const deleteTuit = (tuit) => {
-    dispatch({type: 'delete-tuit', tuit})
-  };
-
   return (
       <div className="list-item">
         <div className="card">
@@ -40,11 +37,16 @@ const TuitListItem = ({
             <div className="row">
               <div className="col-2">
                 <img className="img-fluid circle-img" height="40px"
-                     src={tuit.avatarImage} alt={""}/>
+                     src={"avatarImage" in tuit ? tuit.avatarImage :
+                         "https://pbs.twimg.com/profile_images/1510643662157488139/U5hzfe7J_400x400.jpg"}
+                     alt={""}/>
               </div>
               <div className="col-9 text-right">
-                <span className="username">{tuit.postedBy.username} </span>
-                <span className="handle"> @{tuit.handle} </span>
+                <span className="username">
+                  {"postedBy" in tuit ? tuit.postedBy.username :
+                      "Lior Zippel"}
+                </span>
+                <span className="handle"> @ {"handle" in tuit ? tuit.handle : "Lior"} </span>
                 {tuit.verified ? <i className="fa-solid fa-circle-check"/> : ''}
                 <p>{tuit.tuit}</p>
                 {tuit.hasOwnProperty("attachments")
@@ -60,10 +62,9 @@ const TuitListItem = ({
                 <TuitStats tuit={tuit}/>
               </div>
               <div className="col-1">
-                <i onClick={() =>
-                    deleteTuit(tuit)}
-                   className="fas fa-remove fa-2x
-                  fa-pull-right"/>
+                <i className="fas fa-remove float-end"
+                   onClick={() => deleteTuit(
+                       dispatch, tuit)}/>
               </div>
             </div>
 
