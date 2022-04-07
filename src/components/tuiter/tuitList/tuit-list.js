@@ -1,7 +1,7 @@
 import React, {useEffect} from "react";
 import {useDispatch, useSelector}
   from "react-redux";
-import {createTuit, findAllTuits, deleteTuit}
+import {findAllTuits}
   from "../actions/tuits-actions";
 
 // import tuits from "../data/tuits.json";
@@ -13,8 +13,7 @@ const TuitList = () => {
   const tuits = useSelector((state) => state.tuits);
   const dispatch = useDispatch();
   useEffect(() =>
-          findAllTuits(dispatch),
-      []);
+          findAllTuits(dispatch));
   return (
       <ul className="ttr-tuits list-group">
         {

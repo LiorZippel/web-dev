@@ -3,9 +3,9 @@ import {updateTuit} from "../../actions/tuits-actions";
 
 const TuitStats = ({tuit}) => {
   const dispatch = useDispatch();
-  const likeTuit = () => {
-    dispatch({type: 'like-tuit', tuit});
-  };
+  // const likeTuit = () => {
+  //   dispatch({type: 'like-tuit', tuit});
+  // };
   /*
   <div>
      Likes: {tuit.likes}

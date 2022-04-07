@@ -7,15 +7,15 @@ const WhatsHappening = () => {
   const [newTuit, setNewTuit] =
       useState({tuit: 'New tuit', dislikes:0});
 
-  let [whatsHappening, setWhatsHappening]
-      = useState('');
+  // let [whatsHappening]
+  //     = useState('');
   const dispatch = useDispatch();
-  const tuitClickHandler = () => {
-    dispatch({
-      type: 'create-tuit',
-      tuit: whatsHappening
-    });
-  }
+  // const tuitClickHandler = () => {
+  //   dispatch({
+  //     type: 'create-tuit',
+  //     tuit: whatsHappening
+  //   });
+  // }
   return (
       <>
         <div className="row">
